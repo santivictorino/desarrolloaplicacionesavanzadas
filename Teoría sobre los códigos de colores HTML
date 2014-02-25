@@ -1,0 +1,40 @@
+Teoría sobre los códigos de colores HTML
+
+Seguramente se está preguntando: « ¿Tiene algún significado esta extraña combinación de letras y números?» Pues la respuesta es «Sí» y así es como funciona:) 
+
+Formato de los códigos HTML: 
+Cada código HTML comprende el símbolo «#» y 6 letras o números. Estos números se expresan en el sistema de numeración hexadecimal. Por ejemplo «FF» en hexadecimal representa el número 255 en Decimal. 
+
+Significado de los símbolos: Los dos primeros símbolos del código de color HTML representan la intensidad del color rojo. 00 es el menos intenso y FF es el más intenso. El tercer y el cuarto número representan la intensidad del verde y el quinto y el sexto representan la intensidad del azul. Así, con esta combinación de la intensidad del rojo, verde y azul podemos mezclar cualquier color que deseemos de corazón;) 
+
+Ejemplos: 
+#FF0000 - Con este código HTML le decimos al navegador que muestre la máxima cantidad de rojo y nada de verde ni de azul. 
+
+#00FF00 - Este código HTML muestra solo el verde y nada de rojo ni de azul.      
+
+#0000FF - Este código HTML muestra solo el azul y nada de rojo ni de verde.      
+
+#FFFF00 - Con la combinación de color rojo y verde obtenemos el amarillo.   
+
+#CCEEFF - Cogemos un poco de rojo, un poco más de verde y el máximo de azul para obtener el color del cielo.
+
+RGB !!!!!!
+
+Fundamento teórico
+
+La paleta de colores RGB (RVA en español) consta, básicamente, de tres colores primarios aditivos: Rojo-Verde-Azul. Estos colores primarios aditivos, en HTML, están representados por tres pares hexadecimales del tipo 0xHH-HH-HH según el siguiente formato: (los colores básicos o primarios, no aquellos que son resultantes de mezclas)
+#RRGGBB (= #RRVVAA)
+Los valores que puede adaptar cada uno de los tres pares hexadecimales van del 0x00 (0 decimal) al 0xFF (255 decimal). Cuanto mayor sea el valor del par, tanto mayor será también la intensidad (matiz, brillo o claridad) del color correspondiente a ese par (y viceversa). Esto implica que el extremo inferior de la escala cromática parte de una intensidad (grado) de color mínima (nulo = par 0x00), pasa por una intensidad de color media (mediano = par 0x80 [128 decimal]) hasta llegar a una intensidad de color máxima (saturado = par 0xFF). El grado de más alta pureza (absoluto) de un color primario aditivo estará determinado por la presencia total del mismo (saturación = 0xFF) junto con la ausencia total (nulidad = 0x00) de los otros dos colores primarios aditivos.
+Además de estos tres colores primarios aditivos (RVA), existen tres colores primarios sustractivos o CMY (CMA en español): Cian-Magenta-Amarillo. Estos colores surgen de la siguiente combinación (mezcla) de los primarios aditivos:
+Cian = Verde + Azul
+Magenta = Rojo + Azul
+Amarillo = Rojo + Verde
+En cuanto a su grado de pureza, ocurre algo inverso a los colores primarios aditivos, ya que el grado absoluto estará determinado por la nulidad de uno de sus componentes y la saturación de los otros dos. Los colores complementarios de los primarios, tanto aditivos como sustractivos, serán recíprocamente:
+Rojo ↔ Cian
+Verde ↔ Magenta
+Azul ↔ Amarillo
+La combinación simultánea de los tres primarios aditivos saturados produce el blanco (0xFFFFFF). Contrariamente, la combinación simultánea de los tres primarios sustractivos nulos produce el negro (0x000000). Resulta claro también que la combinación de dos colores mutuamente complementarios producirá el blanco, de igual modo que la sustracción (absorción) de ambos dará lugar al negro (ausencia total de color). Así, p. ej., el rojo (0xFF0000) más su complemetario que es el cian (0x00FFFF), generan el blanco (0xFFFFFF). De hecho, el cian no es otra cosa que la sustracción del rojo al blanco. 
+
+Por su parte, el gris mediano (0x808080), que es el exacto término medio entre el negro y el blanco, se obtendrá a partir de la combinación simultánea de los tres primarios aditivos medianos. Análogamente, el gris semisaturado (claro) se obtendrá a partir de la combinación 0xC0C0C0, mientras que el gris seminulo (oscuro) mediante 0x404040. De este modo, tenemos que el resto de los colores, que están comprendidos entre el negro (0x000000) y el blanco (0xFFFFFF), surgen de la combinación de los tres primarios aditivos en distintos grados. En otras palabras: bastará con reemplazar cada uno de los pares 0xHH-HH-HH por un valor comprendido entre 0x00 y 0xFF para obtener cualquiera de los colores posibles.
+
+Existen 16 777 216 combinaciones distintas en el sistema RGB de 24 bits y, por lo tanto, 16 777 216 colores: 256 × 256 × 256 = 16 777 216. En la práctica, sin embargo, puede haber algunas combinaciones que no sean válidas. Eso pasaba antiguamente, cuando la paleta de colores más grande tenía 256 colores (8 bits). Por eso, existen 216 colores seguros, que serán visibles en cualquier dispositivo sin necesidad de tramado, reservándose los otros 40 colores para el sistema, de los cuales algunos se muestran aquí.
