@@ -1,0 +1,182 @@
+Welcome to Git (version 1.9.0-preview20140217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+Administrador@DEXPO-DARIZA-PC ~
+$ git config --global user.name "santivictorino"
+
+Administrador@DEXPO-DARIZA-PC ~
+$ git config --global user.email "sv121507@ingenieria.sanmartin.edu.co"
+
+Administrador@DEXPO-DARIZA-PC ~
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrador/.ssh/id_rsa):
+Created directory '/c/Users/Administrador/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrador/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrador/.ssh/id_rsa.pub.
+The key fingerprint is:
+39:46:c2:1b:0c:02:44:da:2d:f0:c0:3e:6b:79:00:a5 Administrador@DEXPO-DARIZA-PC
+
+Administrador@DEXPO-DARIZA-PC ~
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA2SpI0BtOXmxS4HPS2J5jy9Y0wCPGQiWa5jG9EmlVFX6b
+bI0y+etNbouf3s8/M5JGMx1Bp6qlUoTVJIdzyn/oQgnUQIyI8+JIPII2g9bgzJa/2qSfdCRRUCv+Zbjh
+t86wWcOaDfX1u+wAmSnRytnPatxq4p2xiqz8UQR0AuzqwcjwTKFIH+s33Sq6ll9Zy21jICYxFmLyc1Jz
+03nYLubCGD2Mtr+foIATWLyvT78ynC2HSG/BU7kihoV6K2n2nkQENp7k/0PR1YmJQOMXfzv3afHSGO0o
+KoWUa249KkXaBezVr8FbHw4I4yj13LG8AXOpHptHzScqCnxLR9uwTkwuLQ== Administrador@DEXPO
+-DARIZA-PC
+
+Administrador@DEXPO-DARIZA-PC ~ (master)
+$ cd desarrolloAplicacionesAvanzadas
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git init
+Initialized empty Git repository in c:/Users/Administrador/desarrolloAplicacione
+sAvanzadas/.git/
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ touch README2
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git add README2
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README2
+
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git commit -m "este es el primer archivo"
+[master (root-commit) 8320eef] este es el primer archivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README2
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git remote add origin https://github.com/santivictorino/desarrolloaplicacione
+savanzadas.git
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git pull origin master
+warning: no common commits
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (4/4), done.
+From https://github.com/santivictorino/desarrolloaplicacionesavanzadas
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Merge made by the 'recursive' strategy.
+ .gitignore | 108 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md  |   4 +++
+ 2 files changed, 112 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ ls
+README.md  README2
+
+Administrador@DEXPO-DARIZA-PC ~/desarrolloAplicacionesAvanzadas (master)
+$ git push origin master
+Username for 'https://github.com': santivictorino
+Password for 'https://santivictorino@github.com':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 582 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/santivictorino/desarrolloaplicacionesavanzadas.git
+   283b86d..bb66dc3  master -> master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
